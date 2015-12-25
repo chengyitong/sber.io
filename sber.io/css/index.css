@@ -1,0 +1,208 @@
+/*
+ * @description:送呗官网页面样式
+ * @author: cyt
+ * @update: 2015.12.25
+*/
+@charset "gb2312";
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-size: 625%;/*100px*/
+}
+
+a {
+	text-decoration: none;
+	color: #2a2a2a;
+}
+
+input {
+	-webkit-appearance: none;
+	outline: none
+}
+
+* {
+	outline: none;
+	webkit-focus-ring-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+}
+
+body, html {
+	width: 100%;
+	font-family: "Microsoft YaHei","Helvetica Neue",Arial, HelveticaNeue, Helvetica, "BBAlpha Sans", sans-serif;
+	font-weight: normal;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-align: center;
+	background: #fff;
+}
+
+body {
+	font-size: .12rem;
+	min-width: 9.9rem;
+}
+.wrapper {
+	width: 9.9rem;
+}
+/* 头部 begin */
+.header-wrap {
+	width: 100%;
+	height: 43.75%;
+	background: url(http://7xlgbd.com2.z0.glb.qiniucdn.com/img%2Fbg.jpg) center top no-repeat;
+	background-size: 100% 100%;
+}
+.header {
+	margin: 0 auto;
+	width: 9.9rem;
+	height: 1rem;
+	line-height: 1rem;
+}
+.header .logo {
+	display: inline-block;
+	float: left;
+	margin-top: .25rem;
+	width: 1.48rem;
+	height: .5rem;
+}
+.header .logo-index {
+	background: url(http://7xlgbd.com2.z0.glb.qiniucdn.com/img%2Flogo.png) center center no-repeat;
+	background-size: 100% 100%;
+}
+.header-menu {
+	position: relative;
+	clear: both;
+}
+.nav {
+	display: inline-block;
+	position: relative;
+	float: right;
+}
+.nav ul li {
+	float: left;
+	margin-left: .3rem;
+}
+.nav ul li a {
+	font-size: .14rem;
+	padding: .05rem;
+	color: #fff;
+}
+.nav ul li a:hover {
+	text-decoration: none;
+	color: #2fb98a;
+	border-bottom: 1px solid #fff;
+}
+.nav-index ul li a:hover {
+	color: #fff;
+	border-bottom: 1px solid #fff;
+}
+.nav ul li.active a {
+	color: #2fb98a;
+	border-bottom: 1px solid #2fb98a;
+}
+.nav-index ul li.active a {
+	color: #fff;
+	border-bottom: 1px solid #fff;
+}
+.header-content {
+	position: relative;
+	display: inline-block;
+	clear: both;
+	margin-left: .49rem;
+	padding-top: .2rem;
+	width: 8.92rem;
+}
+.qrcode {
+	position: relative;
+	float: left;
+	margin-top: 1.4rem;
+	width: 1.6rem;
+	height: 1.6rem;
+	background: url(http://7xlgbd.com2.z0.glb.qiniucdn.com/img/qrcode.png) center center no-repeat;
+	background-size: 100% 100%;
+}
+.content-center {
+	margin: 0 .935rem;
+	float: left;
+}
+.content-title {
+	margin-top: 1.4rem;
+	width: 2.77rem;
+	height: .7rem;
+	background: url(http://7xlgbd.com2.z0.glb.qiniucdn.com/img/title.png) center center no-repeat;
+	background-size: 100% 100%;
+}
+.dld-wrap {
+	display: inline-block;
+	margin-top: .4rem;
+	height: .5rem;
+	line-height: .5rem;
+}
+.dld-wrap a {
+	display: inline-block;
+	width: 1.4rem;
+	text-align: center;
+	height: .5rem;
+	line-height: .5rem;
+	border-radius: .05rem;
+	border: 1px solid #fff;
+	font-family: 'arial';
+	font-size: .16rem;
+	color: #fff;
+	text-decoration: none;
+}
+.dld-wrap a:first-child {
+	margin-right: .46rem;
+}
+.dld-wrap a:hover {
+	background: #2fb98a;
+	border: 1px solid #2fb98a;
+}
+.iphone {
+	float: left;
+	width: 2.1rem;
+	height: 4.4rem;
+	background: url(http://7xlgbd.com2.z0.glb.qiniucdn.com/img/iPhone6.png) center center no-repeat;
+	background-size: 100% 100%;
+}
+/* 头部 end */
+
+/* 首页主体内容 begin */
+.index-content {
+	padding-top: 1.8rem;
+}
+.index-section {
+	display: inline-block;
+	width: 9.9rem;
+	margin-bottom: 1.8rem;
+	text-align: center;
+}
+.index-section h2 {
+	margin-bottom: .2rem;
+	font-size: .36rem;
+	font-weight: normal;
+	color: #464646;
+}
+.index-section h3 {
+	font-size: .24rem;
+	font-weight: normal;
+	color: #787878;
+}
+.index-section .img-wall {
+	margin-top: .9rem;
+}
+.img-wall-2 {
+	margin: 0 .1rem;
+}
+.img-wall-2 div:first-child {
+	margin-bottom: .05rem;
+}
+.img-wall-2 div:last-child img:last-child {
+	margin-left: .02rem;
+}
+.img-wall-3 {
+	margin-right: .1rem;
+}
+.img-wall-4 div:first-child {
+	margin-bottom: .04rem;
+}
+/* 首页主体内容 end */
