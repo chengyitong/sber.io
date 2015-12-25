@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>送呗官网</title>
+	<meta name="baidu-site-verification" content="w5W5dz8rKo" />
+	<meta name="keywords" content="送呗,快递送呗,优点尚,快递,sber,iphone,android,app">
+	<meta name="description" content="“送呗”是广州市优点尚信息科技有限公司于2015年4月推出的一款基于校园服务的移动社交产品。“送呗”作为一款“有用+好玩”的线下搭讪神器，它在解决了校园代拿快递的刚需和为学生提供自由兼职机会的同时，也为双方创造了线下社交的场景。">
+	<meta name="Author" content="广州市优点尚信息科技有限公司"/>
+	<link rel="icon" type="image/x-icon" href="http://7xlgbd.com2.z0.glb.qiniucdn.com/img/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="http://7xl6qe.com2.z0.glb.qiniucdn.com/css/base.min.css">
+
+	<!-- 如果是IE6打开，在顶部出现小黄条进行提醒 -->
+	<!--[if lt IE 7]>
+	<div style="position:absoulute;left:0;top:0;width:100%;height:50px;background:rgb(255,255,233);color:rgb(30,84,148);border-bottom:1px solid rgb(230,230,198);text-align:center;line-height:50px;font-size:12px;">您使用的浏览器版本过低，可能会影响到您浏览本网页，建议您升级您的浏览器。</div>
+	<![endif]-->
+	<!--[if lt IE 9]>
+      <script src="http://7xl6qe.com2.z0.glb.qiniucdn.com/js/respond.min.js"></script>
+      <script src="http://7xl6qe.com2.z0.glb.qiniucdn.com/js/html5shiv.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/index.css" media="all">
+</head>
+<body>
+	<header class="header">
+		<div class="header-menu">
+			<a href="#" class="logo" title="送呗，让生活无所不便"></a>
+			<nav class="nav">
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li class="active"><a href="about.html">关于送呗</a></li>
+					<li><a href="dynamic.html">送呗动态</a></li>
+					<li><a href="contact.html">联系我们</a></li>
+					<li><a href="investment.html">招商加盟</a></li>
+					<li><a href="join.html">加入我们</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<footer class="footer">
+		<small>Copyright &copy; 
+			<span id="startYear">2014 - </span>
+			<span id="nowYear"></span> 
+			广州市优点尚信息科技有限公司 版权所有 
+			<a href="http://www.beianbeian.com/beianxinxi/8f021726-daff-4778-b6da-e9d2d5146f77.html" target="_blank">粤ICP备15046124号-2</a>
+		</small>
+	</footer>
+
+	<script src="http://7xl6qe.com2.z0.glb.qiniucdn.com/js/jquery-1.11.1.min.js"></script>
+	<script>
+	$(function(){
+		var screen_width = window.screen.width;
+		$('.header-wrap').attr('style','height:' + screen_width*.4375 + 'px');
+
+		// 版权时间显示
+		var myDate = new Date(),
+		nowYear = myDate.getFullYear();
+		$("#nowYear").html(nowYear);
+		var startYear = $("#startYear").html().substr(0, 4);
+		if (startYear == nowYear) {
+			$("#startYear").hide();
+		}
+	});
+	</script>
+</body>
+</html>
