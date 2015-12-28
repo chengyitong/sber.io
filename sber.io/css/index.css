@@ -55,7 +55,7 @@ body {
 /* 头部 begin */
 .header-wrap {
 	width: 100%;
-	height: 43.75%;
+	height: 6.3rem;
 	background: url(http://7xlgbd.com2.z0.glb.qiniucdn.com/img/bg.jpg) center top no-repeat;
 	background-size: 100% 100%;
 }
@@ -457,6 +457,44 @@ body {
 }
 /* 招商标准 end */
 
+/* 联系我们 begin */
+.contact-map {
+	width: 9.9rem;
+	height: 5.9rem;
+	background: url(http://7xlgbd.com2.z0.glb.qiniucdn.com/img/map.png) center top no-repeat;
+	background-size: 100% 100%;
+}
+.map-desc {
+	padding: .2rem;
+	width: 4rem;
+	background: #2fb98a;
+}
+.map-desc p {
+	line-height: .28rem;
+	color: #fff;
+}
+.map-desc p.title {
+	margin-bottom: .1rem;
+	font-size: .2rem;
+}
+.contact-list {
+	margin: 1rem 0;
+}
+.contact-box {
+	margin-bottom: .5rem;
+	float: left;
+	width: 33.3333%;
+	text-align: left;
+}
+.contact-box p {
+	color: #6f6f6f;
+}
+.contact-box p:first-child {
+	margin-bottom: .1rem;
+	font-size: .18rem;
+}
+/* 联系我们 end */
+
 /* 加入我们 begin */
 .join-header {
 	padding: .8rem 0;
@@ -524,4 +562,4 @@ body {
 .footer a:hover {
 	color: #2fb98a;
 }
-/* 版权 end */
+/* 版权 end 
