@@ -25,6 +25,11 @@
 	<header class="header">
 		<div class="header-menu">
 			<a href="#" class="logo" title="送呗，让生活无所不便"></a>
+			<div class="header-title">
+				<span>送呗</span>
+				<span>让生活无所不便</span>
+			</div>
+			
 			<nav class="nav">
 				<ul>
 					<li><a href="index.html">首页</a></li>
@@ -42,16 +47,58 @@
 	<!-- 主体部分 begin -->
 	<div class="wrapper">
 		<div class="content">
-			<div class="contact-map">
-				<div class="map-desc">
-					<p class="title">广州市优点尚信息科技有限公司<p/>
-					<p>地址：广东省广州市大学城东三路国家数字家庭基地东区B239</p>
+			<div id="yds-contact">
+	            <div class="resetMap" id="resetMap"><img src="http://7xiige.com1.z0.glb.clouddn.com/images/refresh.png" alt="重置地图" title="重置地图" width="28"></div>
+
+	            <div class="yds-contact-map" id="map-canvas">
+	                <p class="map-loading"><img src="http://7xl6qe.com2.z0.glb.qiniucdn.com/img/loading.gif" alt="加载中">&nbsp;&nbsp;地图正在加载中...</p>
+	            </div>   
+	            <div class="map-desc">  
 					<p>邮编：510006</p>
 					<p>客服电话：400-883-8556</p>
-					<p>乘车路线：地铁4号线到大学城南C出口转乘番201、202，</p>
+					<p>乘车路线：地铁4号线到大学城南站C出口转乘番201、202，</p>
 					<p>环线1、环线2到广中医广药站下车</p>
-				</div>
-			</div>
+	            </div>
+
+	            <script type="text/javascript">
+	            // 百度地图API功能
+	                function loadJScript() {
+	                    var script = document.createElement("script");
+	                    script.type = "text/javascript";
+	                    script.src = "http://api.map.baidu.com/api?v=2.0&ak=HfYZbIAqhrr7ixwD0sf2rzb5&callback=init";
+	                    document.body.appendChild(script);
+	                }
+
+	                function init() {
+	                    var map = new BMap.Map("map-canvas");
+	                    var point = new BMap.Point(113.41440,23.063797);
+	                    var marker = new BMap.Marker(point);  // 创建标注
+	                    map.addOverlay(marker);              // 将标注添加到地图中
+	                    map.centerAndZoom(point, 17);
+	                    var opts = {
+	                      width : 200,     // 信息窗口宽度
+	                      height: 70,     // 信息窗口高度
+	                      title : "广州市优点尚信息科技有限公司" , // 信息窗口标题
+	                      enableMessage:true,//设置允许信息窗发送短息
+	                      message:"您好！广州市优点尚信息科技有限公司欢迎您！"
+	                    }
+	                    var infoWindow = new BMap.InfoWindow("地址：广州大学城东三路广中医教学区国家数字家庭基地东区B239", opts);  // 创建信息窗口对象 
+	                    map.enableScrollWheelZoom();   //启用滚轮放大缩小，默认禁用
+	                    map.enableContinuousZoom();    //启用地图惯性拖拽，默认禁用
+	                    map.openInfoWindow(infoWindow,point); //开启信息窗口
+	                    marker.addEventListener("click", function(){          
+	                        map.openInfoWindow(infoWindow,point); //开启信息窗口
+	                    });
+	                } 
+
+	                window.onload = loadJScript;  //异步加载地图
+
+	                var resetMap = document.getElementById('resetMap');
+	                resetMap.addEventListener('click',function(){
+	                    loadJScript(); //重置地图
+	                });
+	            </script>
+	        </div>
 
 			<div class="contact-list">
 				<div class="contact-box">
