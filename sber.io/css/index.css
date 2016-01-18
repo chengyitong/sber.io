@@ -10,7 +10,7 @@ html {
 	font-size: 625%;/*100px*/
 }
 
-a {
+a,a:hover {
 	text-decoration: none;
 	color: #6f6f6f;
 }
@@ -51,13 +51,13 @@ body {
 	width: 9.9rem;
 	clear: both;
 	padding: .56rem .05rem;
-	min-height: 6rem;
+	min-height: 4.8rem;
 }
 .null-tips {
 	display: block;
 	margin: .5rem auto;
 	text-align: center;
-	color: #263238;
+	color: #6f6f6f;
 }
 /* 头部 begin */
 .header-wrap {
@@ -346,6 +346,39 @@ body {
 .dynamic-rm a:hover {
 	border-radius: 0 .18rem;
 	background: #5ea51b;
+}
+/* 动态详情 */
+.dynamic-detail {
+	padding: .2rem .5rem;
+}
+.detail-title {
+	color: #263238;
+	font-weight: normal;
+	font-size: .24rem;
+	text-align: center;
+}
+.detail-time {
+	margin: .1rem 0 .3rem 0;
+	text-align: right;
+}
+.detail-content {
+	color: #6f6f6f;
+	line-height: .28rem;
+	font-size: .14rem;
+}
+.dynamic-page {
+	margin: .3rem 0;
+	text-align: center;
+}
+.dynamic-page a {
+	display: inline-block;
+	border: 1px solid #2fb98a;
+	padding: .02rem .05rem;
+	border-radius: .05rem;
+}
+.dynamic-page a:hover {
+	background: #2fb98a;
+	color: #fff;
 }
 /* 动态 end */
 
@@ -686,4 +719,4 @@ body {
 .footer a:hover {
 	color: #2fb98a;
 }
-/* 版权 end 
+/* 版权 end */
